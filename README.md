@@ -1,19 +1,11 @@
-# :package_description
+# A collection of resuseable components for Filament Apps
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/run-tests?label=tests)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/:vendor_slug/:package_slug/Check%20&%20fix%20styling?label=code%20style)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/alexbirtwell/ab-filament-extras.svg?style=flat-square)](https://packagist.org/packages/alexbirtwell/ab-filament-extras)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/alexbirtwell/ab-filament-extras/run-tests?label=tests)](https://github.com/alexbirtwell/ab-filament-extras/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/alexbirtwell/ab-filament-extras/Check%20&%20fix%20styling?label=code%20style)](https://github.com/alexbirtwell/ab-filament-extras/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/alexbirtwell/ab-filament-extras.svg?style=flat-square)](https://packagist.org/packages/alexbirtwell/ab-filament-extras)
 
-<!--delete-->
----
-This repo can be used to scaffold a Filament plugin. Follow these steps to get started:
 
-1. Press the "Use this template" button at the top of this repo to create a new repo with the contents of this skeleton.
-2. Run "php ./configure.php" to run a script that will replace all placeholders throughout all the files.
-3. Make something great!
----
-<!--/delete-->
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
@@ -22,26 +14,26 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
+composer require alexbirtwell/ab-filament-extras
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-migrations"
+php artisan vendor:publish --tag="ab-filament-extras-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-config"
+php artisan vendor:publish --tag="ab-filament-extras-config"
 ```
 
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-views"
+php artisan vendor:publish --tag="ab-filament-extras-views"
 ```
 
 This is the contents of the published config file:
@@ -54,8 +46,8 @@ return [
 ## Usage
 
 ```php
-$skeleton = new VendorName\Skeleton();
-echo $skeleton->echoPhrase('Hello, VendorName!');
+$ab-filament-extras = new Alexbirtwell\AbFilamentExtras();
+echo $ab-filament-extras->echoPhrase('Hello, Alexbirtwell!');
 ```
 
 ## Testing
@@ -78,7 +70,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Alex Birtwell](https://github.com/alexbirtwell)
 - [All Contributors](../../contributors)
 
 ## License
