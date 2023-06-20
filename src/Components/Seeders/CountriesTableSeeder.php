@@ -1,8 +1,11 @@
 <?php
 namespace Alexbirtwell\AbFilamentExtras\Components\Seeders;
 
-use App\Models\Country;
+use Alexbirtwell\AbFilamentExtras\Models\Country;
+use Illuminate\Database\Console\Migrations\MigrateCommand;
+use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 
 class CountriesTableSeeder extends Seeder
 {
@@ -1212,5 +1215,13 @@ class CountriesTableSeeder extends Seeder
         ];
 
         Country::insert($countries);
+    }
+
+    public static function seed(): self
+    {
+        //create table if not exists
+        $static = new static();
+        $static->run();
+        return $static;
     }
 }
