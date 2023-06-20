@@ -5,8 +5,9 @@ namespace Alexbirtwell\AbFilamentExtras\Traits;
 use Alexbirtwell\AbFilamentExtras\Models\Country;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use PhpParser\Node\Expr\Cast\Object_;
 
-class HasAddressSchema
+trait HasAddressSchema
 {
     public static function getAddressFieldsSchema(): array
     {
@@ -37,5 +38,16 @@ class HasAddressSchema
                         ->searchable(),
 
                 ];
+    }
+
+    public static function migrationCommands(): void
+    {
+        $table = new Object_();//dummy
+        $table->string("address_line_1")->nullable();
+        $table->string("address_line_2")->nullable();
+        $table->string("address_city")->nullable();
+        $table->string("address_region")->nullable();
+        $table->string("address_postal_code")->nullable();
+        $table->foreignId("address_country_id")->nullable();
     }
 }
