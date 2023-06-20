@@ -11,6 +11,10 @@ class CountriesTableSeeder extends Seeder
 {
     public function run()
     {
+        if (Country::all()->count() > 0) {
+            return;
+        }
+
         $countries = [
             [
                 'id'         => 1,
