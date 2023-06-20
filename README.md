@@ -24,6 +24,13 @@ php artisan vendor:publish --tag="ab-filament-extras-migrations"
 php artisan migrate
 ```
 
+You can publish and run the seeders with:
+
+```bash
+php artisan vendor:publish --tag="ab-filament-extras-seeders"
+php artisan db:seed
+```
+
 You can publish the config file with:
 
 ```bash

@@ -40,7 +40,7 @@ class AbFilamentExtrasServiceProvider extends PluginServiceProvider
 
     public function boot()
     {
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->publishes([__DIR__ .'/../database/seeders' => database_path('seeders')], ['ab-filament-extras-seeders']);
+        $this->publishes([__DIR__ .'/../database/migrations' => database_path('migrations')], ['ab-filament-extras-migrations']);
     }
 }
