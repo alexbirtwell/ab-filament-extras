@@ -2,10 +2,10 @@
 
 namespace Alexbirtwell\AbFilamentExtras;
 
-use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class AbFilamentExtrasServiceProvider extends PluginServiceProvider
+class AbFilamentExtrasServiceProvider extends PackageServiceProvider
 {
     public static string $name = 'ab-filament-extras';
 
