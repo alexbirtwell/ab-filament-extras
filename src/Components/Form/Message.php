@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Fields;
+namespace Alexbirtwell\AbFilamentExtras\Components\Form;
 
 use Closure;
 use Filament\Forms\Components\Field;

@@ -17,14 +17,14 @@
     ],
     "require": {
         "php": "^8.0",
-        "filament/filament": "^2.0",
+        "filament/filament": "^3.0",
         "illuminate/contracts": "^9.0|^10.0",
         "lorisleiva/laravel-actions": "^2.6",
         "protonemedia/laravel-form-components": "^3.8",
-        "savannabits/filament-signature-pad": "^1.1",
         "spatie/laravel-package-tools": "^1.13.5"
     },
     "require-dev": {
+        "filament/upgrade": "^3.0-stable",
         "nunomaduro/collision": "^6.0",
         "orchestra/testbench": "^7.0",
         "pestphp/pest": "^1.21",
